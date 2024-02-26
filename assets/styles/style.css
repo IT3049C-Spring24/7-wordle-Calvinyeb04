@@ -1,0 +1,55 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color:#0B1623;
+    color: #F5F8FF;
+}
+
+header h1{
+    color: #F5F8FF;
+    text-align: center;
+}
+
+/* Styling the Grid */
+.letter {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #3A3A3C;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    text-align: center;
+
+}
+
+
+/* Game Grid */
+#wordle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 8px;
+
+    height:  70vh;
+    display: grid;
+    place-items: center;
+}
+
+
+/* Back to the letter squares */
+.letter.correct{
+    background-color: #538D4E;
+    color: white;
+}
+
+.letter.misplaced{
+    background-color: #B59F3B;
+    color: white;
+
+}
+
+.letter.incorrect{
+    background-color: #3A3A3C;
+    color: white;
+}
+
+
+
