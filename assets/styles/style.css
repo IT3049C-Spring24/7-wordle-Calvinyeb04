@@ -1,0 +1,124 @@
+/* CSS Reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Actual Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B1623;
+    color: #F5F8FF;
+}
+
+header {
+    border-bottom: 2px solid #F5F8FF;
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px 0;
+}
+
+#game {
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+#wordle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 8px;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.letter {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #3A3A3C;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    display: grid;
+    place-items: center;
+}
+
+.correct {
+    background-color: #538D4E;
+}
+
+.misplaced {
+    background-color: #B59F3B;
+}
+
+.incorrect {
+    background-color: #3A3A3C;
+}
+
+:root {
+    --default: #121213;
+    --wrong: #3a3a3c;
+    --misplaced: #b59f3b;
+    --correct: #538d4e;
+    --text-color: #f5f5f5;
+}
+
+.light-mode {
+    --default: #f5f5f5;
+    --wrong: #ff4d4d;
+    --misplaced: #ffcc00;
+    --correct: #00cc66;
+    --text-color: #121213;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--default);
+    color: var(--text-color);
+}
+
+header {
+    border-bottom: 2px solid var(--text-color);
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px 0;
+}
+
+#game {
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+#wordle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 8px;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.letter {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--wrong);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    display: grid;
+    place-items: center;
+}
+
+.correct {
+    background-color: var(--correct);
+}
+
+.misplaced {
+    background-color: var(--misplaced);
+}
+
+.incorrect {
+    background-color: var(--default);
+}
