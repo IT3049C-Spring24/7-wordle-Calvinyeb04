@@ -1,10 +1,8 @@
 // Get a reference to the mode-toggle span
-const modeToggle = document.getElementById('mode-toggle');
+const modeToggleSpan = document.getElementById('mode-toggle');
 
-// Add event listener to the mode-toggle span
-modeToggle.addEventListener('click', () => {
-    console.log('Mode toggle clicked');
-    
-    // Toggle the body class property
+// Add an event listener to the mode-toggle span
+modeToggleSpan.addEventListener('click', function() {
+    // Toggle the light-mode class on the body tag
     document.body.classList.toggle('light-mode');
 });
