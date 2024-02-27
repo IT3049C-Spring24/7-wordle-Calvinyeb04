@@ -5,30 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle</title>
     <link rel="stylesheet" href="assets/styles/style.css">
-    <script src="assets/scripts/dark-mode-toggle.js" defer></script>
-    <script src="assets/scripts/game.js" defer></script>
-    <script src="assets/scripts/main.js" defer></script>
 </head>
-<body>
+<body class="dark-mode">
     <header>
         <h1>Wordle</h1>
         <span id="mode-toggle">🌞/🌙</span>
     </header>
-    <div class="game">
+
+    <div id="game">
         <div id="wordle-grid">
-            <div class="letter correct">A</div>
-            <div class="letter misplaced">B</div>
-            <div class="letter incorrect">C</div>
-            <div class="letter incorrect">D</div>
-            <div class="letter incorrect">E</div>
-            <!-- Repeat these divs to fill the grid -->
-            <div class="letter">F</div>
-            <div class="letter">G</div>
-            <div class="letter">H</div>
-            <div class="letter">I</div>
-            <div class="letter">J</div>
-            <!-- Repeat these divs to fill the grid -->
+          
         </div>
     </div>
+
+    <script src="assets/scripts/dark-mode-toggle.js"></script>
+    <script src="assets/scripts/game.js"></script>
+    <script src="assets/scripts/main.js"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+/* Actual Styling */
+body {
     font-family: Arial, sans-serif;
     background-color: #0B1623;
     color: #F5F8FF;
@@ -12,8 +16,11 @@ header {
     text-align: center;
 }
 
-/* Game Grid */
-.game {
+header h1 {
+    margin: 20px 0;
+}
+
+#game {
     height: 70vh;
     display: grid;
     place-items: center;
@@ -23,6 +30,7 @@ header {
     display: grid;
     grid-template-columns: repeat(5, auto);
     gap: 8px;
+    padding: 10px; /* Adjust padding as needed */
 }
 
 .letter {
@@ -35,7 +43,6 @@ header {
     place-items: center;
 }
 
-/* Color Classes */
 .correct {
     background-color: #538D4E;
 }
@@ -48,62 +55,70 @@ header {
     background-color: #3A3A3C;
 }
 
-
-
-/* Styles for light mode */
-.light-mode {
-    background-color: #F5F8FF;
-    color: #0B1623;
-}
-
-/* Define colors for game letters in light mode */
-.light-mode .letter.incorrect {
-    background-color: #FF4D4D; /* Wrong letter color */
-}
-
-.light-mode .letter.misplaced {
-    background-color: #FFCC00; /* Misplaced letter color */
-}
-
-.light-mode .letter.correct {
-    background-color: #00CC66; /* Correct letter color */
-}
-
-
-
-/* Define CSS variables */
 :root {
-    --default: #121213;       /* Default background color */
-    --wrong: #3a3a3c;         /* Wrong letter color */
-    --misplaced: #b59f3b;     /* Misplaced letter color */
-    --correct: #538d4e;       /* Correct letter color */
-    --text-color: #f5f5f5;    /* Default text color */
-  }
-  
-  .light-mode {
-    --default: #f5f5f5;       /* Light mode background color */
-    --wrong: #ff4d4d;         /* Light mode wrong letter color */
-    --misplaced: #ffcc00;     /* Light mode misplaced letter color */
-    --correct: #00cc66;       /* Light mode correct letter color */
-    --text-color: #121213;    /* Light mode text color */
-  }
-  
-  /* Apply the colors using CSS variables */
-  body {
+    --default: #121213;
+    --wrong: #3a3a3c;
+    --misplaced: #b59f3b;
+    --correct: #538d4e;
+    --text-color: #f5f5f5;
+}
+
+.light-mode {
+    --default: #f5f5f5;
+    --wrong: #ff4d4d;
+    --misplaced: #ffcc00;
+    --correct: #00cc66;
+    --text-color: #121213;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: var(--default);
     color: var(--text-color);
-  }
-  
-  /* Define colors for game letters using CSS variables */
-  .letter.incorrect {
-    background-color: var(--wrong);
-  }
-  
-  .letter.misplaced {
-    background-color: var(--misplaced);
-  }
-  
-  .letter.correct {
+}
+
+header {
+    border-bottom: 2px solid var(--text-color);
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px 0;
+}
+
+#game {
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+#wordle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 8px;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.letter {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--wrong);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    display: grid;
+    place-items: center;
+}
+
+.correct {
     background-color: var(--correct);
-  }
-  
+}
+
+.misplaced {
+    background-color: var(--misplaced);
+}
+
+.incorrect {
+    background-color: var(--default);
+}
