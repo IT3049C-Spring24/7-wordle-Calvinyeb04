@@ -81,6 +81,13 @@ div.game {
     color: #00CC66;
 }
 
+#wordle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 4px; /* Reduce the gap between grid boxes */
+    place-items: center;
+    margin-top: 20px;
+}
 
 
 :root {
@@ -97,4 +104,11 @@ div.game {
     --correct-color: #538D4E;
     --misplaced-color: #B59F3B;
     --incorrect-color: #FF4D4D;
+}
+#wordle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 2px; /* Reduce the gap between grid boxes */
+    place-items: center;
+    margin-top: 20px;
 }
