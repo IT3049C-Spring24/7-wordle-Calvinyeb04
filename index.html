@@ -3,38 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Wordle</title>
   <link rel="stylesheet" href="assets/styles/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 <body>
   <header>
     <h1>Wordle</h1>
-  </header> 
-
+    <span id="mode-toggle">🌞/🌙</span>
+  </header>
 
   <div id="game">
     <div id="wordle-grid">
-      <div class="letter correct">A</div>
-      <div class="letter misplaced">B</div>
-      <div class="letter incorrect">C</div>
-      <div class="letter correct">D</div>
-      <div class="letter incorrect">E</div>
-      <div class="letter misplaced">F</div>
-      <div class="letter correct">G</div> 
-      <div class="letter incorrect">H</div>
-      <div class="letter correct">I</div>
-      <div class="letter misplaced">J</div>
+        <div class="letter correct">A</div>
+        <div class="letter misplaced">B</div>
+        <div class="letter incorrect">C</div>
+        <div class="letter">D</div>
+        <div class="letter">E</div>
+
+
+        <div class="letter ">A</div>
+        <div class="letter">B</div>
+        <div class="letter ">C</div>
+        <div class="letter">D</div>
+        <div class="letter">E</div>
     </div>
   </div>
 
-  
-
-
-
-  
-  <scripts src="assets/scripts/dark-mode-toggle.js"></scripts>
-  <scripts src="assets/scripts/game.js"></scripts>
-  <scripts src="assets/scripts/main.js"></scripts>
+  <script src="assets/scripts/dark-mode-toggle.js"></script>
+  <script src="assets/scripts/game.js"></script>
+  <script src="assets/scripts/main.js"></script>
 </body>
 </html>

@@ -1,16 +1,24 @@
+/* Reset styles */
 body {
-    margin: 0%;
-    padding: 0%;
-    background-color:#0B1623;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling */
+body {
+    font-family: sans-serif;
+    background-color: #0B1623;
     color: #F5F8FF;
 }
 
-header h1{
-    color: #F5F8FF;
+header {
+    border-bottom: 1px solid #F5F8FF;
+}
+
+header h1 {
     text-align: center;
 }
 
-/* Styling the Grid */
 .letter {
     width: 60px;
     height: 60px;
@@ -18,38 +26,75 @@ header h1{
     text-transform: uppercase;
     font-size: 2.4rem;
     text-align: center;
-
+    display: grid;
+    place-items: center;
 }
-
 
 /* Game Grid */
 #wordle-grid {
     display: grid;
     grid-template-columns: repeat(5, auto);
     gap: 8px;
-
-    height:  70vh;
-    display: grid;
     place-items: center;
+    margin-top: 20px; /* Add margin to the top */
 }
 
+div.game {
+    place-items: center;
+    height: 70vh; /* Set a fixed height */
+}
 
-/* Back to the letter squares */
-.letter.correct{
+.letter.correct {
     background-color: #538D4E;
-    color: white;
+    color: #F5F8FF;
 }
 
-.letter.misplaced{
+.letter.misplaced {
     background-color: #B59F3B;
-    color: white;
-
+    color: #F5F8FF;
 }
 
-.letter.incorrect{
+.letter.incorrect {
     background-color: #3A3A3C;
-    color: white;
+    color: #F5F8FF;
 }
 
 
 
+
+
+
+.light-mode {
+    background-color: #F5F8FF;
+    color: #0B1623;
+}
+
+.light-mode .letter.correct {
+    color: #FF4D4D;
+}
+
+.light-mode .letter.misplaced {
+    color: #FFCC00;
+}
+
+.light-mode .letter.incorrect {
+    color: #00CC66;
+}
+
+
+
+:root {
+    --primary-color: #3A3A3C;
+    --secondary-color: #F5F8FF;
+    --correct-color: #538D4E;
+    --misplaced-color: #B59F3B;
+    --incorrect-color: #FF4D4D;
+}
+
+:light-mode {
+    --primary-color: #F5F8FF;
+    --secondary-color: #3A3A3C;
+    --correct-color: #538D4E;
+    --misplaced-color: #B59F3B;
+    --incorrect-color: #FF4D4D;
+}
